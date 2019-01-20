@@ -50,11 +50,11 @@ module.exports = {
 							/* put css-loader below */
 							loader: 'postcss-loader',
 							options: {
-								// 下面的插件给 postcss 使用
+								// 指定插件插件给 postcss 使用
 								ident: 'postcss',
 								plugins: [
-                  /* css3 Attribute added vendor prefix */
-                  // 'autoprefixer' <-- already included in postcss-cssnext
+									/* css3 Attribute added vendor prefix */
+									// 'autoprefixer' <-- already included in postcss-cssnext
 									require('autoprefixer')(),
 									/* Use future css syntax */
 									require('postcss-cssnext')(),

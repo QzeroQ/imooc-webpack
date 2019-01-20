@@ -106,6 +106,7 @@ module.exports = {
         /* 请求远端服务器 */
         target: 'https://m.weibo.cn',
         /* 找到真实请求的地址, 代理元 dom 到 url */
+        //这个必须设置为true否则会报错
         changeOrigin: true,
         /* http 请求头 */
         headers: {

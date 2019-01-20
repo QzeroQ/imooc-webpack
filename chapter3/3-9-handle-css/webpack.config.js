@@ -42,7 +42,7 @@ module.exports = {
             options: {
               /* number of loaders applied before CSS loader */
               // importLoader: 2,
-              /* compress ? */
+              /* 是否压缩 */
               minimize: true,
               /* enable css-modules ? */
               modules: true,

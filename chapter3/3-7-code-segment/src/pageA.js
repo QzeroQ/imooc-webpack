@@ -38,6 +38,25 @@ if (page === 'subPageA') {
   )
 }
 
+/* 动态 import 会马上执行代码  */
+///* webpackChunkName:'subpageA' */这种写法是指定引出的公共代码文件名，如果这个名字都是一样的话，就会打包到同一个文件中
+// if (page === 'subpageA') {
+//   import(/* webpackChunkName:'subpageA' */'./subPageA')
+//       .then(function(subPageA) {
+//           console.log(subPageA)
+//       })
+// } else if (page === 'subPageB') {
+//   import(/* webpackChunkName:'subpageB' */'./subPageB')
+//       .then(function(subPageB) {
+//           console.log(subPageB)
+//       })
+// }
+
+
+
+
+
+
 /*
 把没有使用过的 require 资源进行独立分成一个js文件
 第三方模块 lodash 与业务代码分离 
